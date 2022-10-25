@@ -1,0 +1,224 @@
+/* ==== main ================= */
+main{
+    position: relative;
+    animation-name: main;
+    animation-duration: 2s;
+    /* animation-delay: 3S; */
+    animation-fill-mode: forwards;
+    position: relative;
+    
+}
+
+/* ===Animation ==== */
+
+@keyframes main {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+.background{
+    overflow: hidden;
+    
+    height: 100vh;
+    z-index: -1;
+}
+
+.text__content{
+    position: absolute;
+    top: 10%;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main__text{
+  line-height: 2rem;
+  margin-right: 25%;
+
+}
+
+.main__text h1{
+    color: #0606b3;
+    font-size: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .5rem;
+}
+
+.main__text h3{
+    font-size: 2rem;
+    font-family: var(--font);
+    margin-top: 3rem;
+    margin-bottom: 1.3rem;
+   
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+   
+}
+
+.main__text h4{
+    font-size: 2rem;
+    font-family: var(--font);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main__text p{
+    margin-bottom: 1.5rem;
+
+}
+
+.people__image img{
+    height: 120%;
+   
+   
+
+    
+}
+
+/* ====== about us */
+
+.about__us h1{
+    background-color: var(--color-background);
+    text-align: center;
+    padding: 20px;
+    font-family: var(--font);
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.about__context{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+   
+   
+}
+
+.paragraph{
+    font-size: 20px;
+    margin-left: 30px;
+    font-size: 2rem;
+    line-height: 1.5;
+    
+}
+
+
+
+/* ====== footer ================ */
+
+footer{
+    background: rgba(0, 0, 255, 0.726);
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    line-height: 2rem;
+}
+
+.footer__header{
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.footer__body{
+    display: flex;
+    justify-content: space-between;
+}
+.form input{
+    font-size: 1.5rem;
+    margin: .7rem;
+    width: 100%;
+    padding: .6rem;
+    
+
+}
+
+.btn__send{
+    width: 100%;
+}
+
+/* ====== animation ==== */
+.appointmnet__btn{
+    animation-name: appoint;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes appoint {
+    0%{
+        left: -200px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+
+
+
+/* ======== responsive  ==== */
+
+
+
+@media (max-width:768px) {
+/* ====== main ===== */
+.main__text h1{
+    
+    font-size: 4rem;
+   
+}
+
+
+
+.main__text h3{
+   
+    font-size: 30px;
+
+   
+}
+
+    .people__image{
+        display: none;
+    }
+
+
+    /* === about ========*/
+
+    .about__context{
+        display: flex;
+       flex-direction: column;
+       
+    }
+
+    /* ==== contact ==== */
+
+   
+
+
+
+    /* ===== footer ====== */
+
+    .footer__body{
+        flex-direction: column;
+    }
+   
+}
+
+
+

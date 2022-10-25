@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+  --color-background: #2b01ff;
+  --text-color: white;
+  --color-btnhover: #0b0236;
+  --transition: ease all .5s;
+  --font:'Roboto', sans-serif;
+
+}
+
+/* ---- button ---- */
+
+.btn{
+  background-color: var(--color-background);
+  color: var(--text-color);
+  transition: var(--transition);
+  padding: 10px;
+  border: none;
+ 
+}
+
+.btn:hover{
+  background: var(--color-btnhover);
+  color: black;
+  
+}
+
+
+/* ---- link ---*/
+a{
+  text-decoration: none;
+  color: white;
+  transition: var(--transition);
+  
+}
+
+a:hover{
+ background: var(--color-btnhover);
+ padding: 5px;
+ font-weight: 700;
+}
+
+
